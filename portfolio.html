@@ -8,90 +8,111 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.css"
         integrity="sha512-Zx6MlUMKSVJoQ+83OwhdILe8cSEsCzfqThJd7J/VA2UrK6Ctj85p+xzqfyuNXE5B1k25uUdmJ2OzItbBy9GHAQ=="
         crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 </head>
 
 <body>
-    <main class="main-portfolio">
-        <section class="container">
-            <h2 hidden>Портфолио</h2>
-            <nav>
-                <ul class="filter-options">
-                    <li><a class="btn-filter" href="">Все</a></li>
-                    <li><a class="btn-filter" href="">Веб-сайты</a></li>
-                    <li><a class="btn-filter" href="">Приложения</a></li>
-                    <li><a class="btn-filter" href="">Дизайн</a></li>
-                    <li><a class="btn-filter" href="">Маркетинг</a></li>
-                </ul>
-            </nav>
-            <div class="portfolio-items__wrapper">
-                <div class="portfolio-item">
-                    <a href="#">
-                        <img src="./img/portfolio/img1.jpg" alt="Технокряк" width="370" height="294">
-                        <h3>Технокряк</h3>
-                        <p>Веб-сайт</p>
-                    </a>
-                </div>
-                <div class="portfolio-item">
-                    <a href="#">
-                        <img src="./img/portfolio/img2.jpg" alt="Постер Новый Орлеан против Золотой Звезды" width="370"
-                            height="294">
-                        <h3>Постер New Orlean vs Golden Star</h3>
-                        <p>Дизайн</p>
-                    </a>
-                </div>
-                <div class="portfolio-item">
-                    <a href="#">
-                        <img src="./img/portfolio/img3.jpg" alt="Ресторан Сифуд" width="370" height="294">
-                        <h3>Ресторан Seafood</h3>
-                        <p>Приложение</p>
-                    </a>
-                </div>
-                <div class="portfolio-item">
-                    <a href="#">
-                        <img src="./img/portfolio/img4.jpg" alt="Проект Прайм" width="370" height="294">
-                        <h3>Проект Prime</h3>
-                        <p>Маркетинг</p>
-                    </a>
-                </div>
-                <div class="portfolio-item">
-                    <a href="#">
-                        <img src="./img/portfolio/img5.jpg" alt="Проект Боксез" width="370" height="294">
-                        <h3>Проект Boxes</h3>
-                        <p>Маркетинг</p>
-                    </a>
-                </div>
-                <div class="portfolio-item">
-                    <a href="#">
-                        <img src="./img/portfolio/img6.jpg" alt="Вдохновение не имеет границ" width="370" height="294">
-                        <h3>Inspiration has no Borders</h3>
-                        <p>Маркетинг</p>
-                    </a>
-                </div>
-                <div class="portfolio-item">
-                    <a href="#">
-                        <img src="./img/portfolio/img7.jpg" alt="Издание Лимитед Эдишен" width="370" height="294">
-                        <h3>Издание Limited Edition</h3>
-                        <p>Дизайн</p>
-                    </a>
-                </div>
-                <div class="portfolio-item">
-                    <a href="#">
-                        <img src="./img/portfolio/img8.jpg" alt="Проект ЛАБ" width="370" height="294">
-                        <h3>Проект LAB</h3>
-                        <p>Маркетинг</p>
-                    </a>
-                </div>
-                <div class="portfolio-item">
-                    <a href="#">
-                        <img src="./img/portfolio/img9.jpg" alt="Рост Бизнеса" width="370" height="294">
-                        <h3>Growing Business</h3>
-                        <p>Приложение</p>
-                    </a>
-                </div>
-            </div>
+    <!--Navbar-->
+    <header>
+        <nav>
+            <a href="./index.html">
+                <span>Web</span>Studio
+            </a>
+
+            <ul>
+                <li><a href="./index.html">Studio</a></li>
+                <li><a href="./portfolio.html">Portfolio</a></li>
+                <li><a href="">Contacts</a></li>
+            </ul>
+        </nav>
+
+        <!--Contacts container-->
+        <section>
+            <ul>
+                <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+            </ul>
         </section>
+
+    </header>
+
+    <!--Main portfolio container-->
+    <main>
+        <!--Buttons section-->
+        <section class="buttons">
+            <button type="button">All</button>
+            <button type="button">Web-Sites</button>
+            <button type="button">Applications</button>
+            <button type="button">Designe</button>
+            <button type="button">Marketing</button>
+        </section>
+
+        <!--Our projects section-->
+        <section>
+            <ul>
+                <li>
+                    <img src="./images/technocrack.jpg" alt="image of technocrack">
+                    <h3>Technocrack</h3>
+                    <p>Web-Site</p>
+                </li>
+                <li>
+                    <img src="./images/poster-new-orleans.jpg" alt="image of poster-new-orleans">
+                    <h3>Poster New Orlean vs Golden Star</h3>
+                    <p>Design</p>
+                </li>
+                <li>
+                    <img src="./images/restaurant-seafood.jpg" alt="image of restaurant-seafood">
+                    <h3>Restaurant Seafood</h3>
+                    <p>Application</p>
+                </li>
+                <li>
+                    <img src="./images/project-prime.jpg" alt="image of project prime">
+                    <h3>Project Prime</h3>
+                    <p>Marketing</p>
+                </li>
+                <li>
+                    <img src="./images/project-boxes.jpg" alt="image of project boxes">
+                    <h3>Project Boxes</h3>
+                    <p>Application</p>
+                </li>
+                <li>
+                    <img src="./images/inspiration-has-no-borders.jpg"
+                        alt="image of wbe-site inspiration-has-no-borders">
+                    <h3>Inspiration has no Borders</h3>
+                    <p>Web-Site</p>
+                </li>
+                <li>
+                    <img src="./images/pub-limited-edition.jpg" alt="image of pulication limited edition">
+                    <h3>Publication Limited Edition</h3>
+                    <p>UI Designe</p>
+                </li>
+                <li>
+                    <img src="./images/project-lab.jpg" alt="image of project lab">
+                    <h3>Project LAB</h3>
+                    <p>Marketing</p>
+                </li>
+                <li>
+                    <img src="./images/growing-business.jpg" alt="image of growing business">
+                    <h3>Growing Business</h3>
+                    <p>Application</p>
+                </li>
+            </ul>
+        </section>
+
+        <!--Footer container-->
+        <footer>
+            <a href="./index.html">
+                <span>Web</span>Studio
+            </a>
+            <address>
+                г. Киев, пр-т Леси Украинки, 26
+            </address>
+            <ul>
+                <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+            </ul>
+
+        </footer>
     </main>
 </body>
 
