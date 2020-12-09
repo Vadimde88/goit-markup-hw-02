@@ -62,11 +62,13 @@ ul {
     color: #757575;
 }
 
+.nav-link:focus,
 .nav-link:hover {
     color: #2196F3;
     transition: color 0.25s;
 }
 
+.contacts:focus,
 .contacts:hover {
     color: #2196F3;
     transition: color 0.25s;
@@ -166,6 +168,7 @@ ul {
     color: #212121;
 }
 
+.buttons:focus,
 .buttons:hover {
     color: #FFFFFF;
     background-color:  #2196F3;
