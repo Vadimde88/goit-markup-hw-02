@@ -3,14 +3,12 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     position: absolute;
-    box-sizing: border-box;
+    
     letter-spacing: 0.015em;
-
     font-family: Roboto, sans-serif;
 }
 
 header {
-    width: 1600px;
     height: 80px;
     background-color: #FFFFFF;
 }
@@ -43,9 +41,6 @@ ul {
     line-height: 1.19;
 }
 
-.studio-footer {
-    color: #FFFFFF;
-}
 
 .navigation-links,
 .nav-link {
@@ -67,12 +62,43 @@ ul {
     color: #757575;
 }
 
+.nav-link:hover {
+    color: #2196F3;
+    transition: color 0.25s;
+}
+
+.contacts:hover {
+    color: #2196F3;
+    transition: color 0.25s;
+}
+
+/* hero container */
 .hero-title {
+    margin-top: 100px;
+    margin-bottom: 0;
+
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     text-align: center;
     text-transform: uppercase;
+}
+
+.button-primary {
+    border-radius: 4px;
+    padding: 10px 32px;
+    font-weight: 700; 
+    font-size: 16px;
+    line-height: 1.9;
+    text-decoration: none;
+
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
 
 .section-title {
@@ -101,7 +127,7 @@ ul {
     font-size: 16px;
     line-height: 1.19;
 
-    text-align: center;
+    /* text-align: center; */
 
     color: #212121;
 }
@@ -124,15 +150,33 @@ ul {
     color: #FFFFFF;
 }
 
+/* porfolio */
 .buttons {
+    display: inline-flex;
     background: #F5F4FA;
-    border-radius: 4px; 
+    box-sizing: border-box;
+    border-radius: 4px;
+    border-style: none;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
     text-align: center;
 
     color: #212121;
+}
+
+.buttons:hover {
+    color: #FFFFFF;
+    background-color:  #2196F3;
+    transition: color 0.25s, background-color 0.25s;
+    box-shadow: 0 0.5em 0.5em -0.4em #212121;
+    transform: translateY(-0.15em);
+    cursor: pointer;
+}
+
+.buttons-section {
+    padding-top: 100px;
 }
 
 .project-title {
@@ -151,6 +195,11 @@ ul {
     color: #757575;
 }
 
+/* footer */
 .footer-container {
     background-color: #2F303A;
+}
+
+.studio-footer {
+    color: #FFFFFF;
 }
