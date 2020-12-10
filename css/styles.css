@@ -1,3 +1,15 @@
+:root {
+    --main-background-color: #FFFFFF;
+    --sec-background-color: #F5F4FA;
+    --dark-background-color: #2F303A;
+
+    --accent-color: #2196F3;
+
+    --text-color: #212121;
+    --sec-text-color: #757575;
+}
+
+
 body {
     width: 1230px;
     padding-left: 15px;
@@ -8,9 +20,10 @@ body {
     font-family: Roboto, sans-serif;
 }
 
+/*header-container*/
 header {
     height: 80px;
-    background-color: #FFFFFF;
+    background-color: var(--main-background-color);
 }
 
 ul {
@@ -21,21 +34,21 @@ ul {
     font-family: Raleway, sans-serif;
     text-decoration: none;
 
-    color: #000000;
+    color: var(--text-color);
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
 }
 
 .nav-logo-title > span {
-    color: #2196F3;
+    color: var(--accent-color);
 }
 
 .logo-title {
     font-family: Raleway, sans-serif;
     text-decoration: none;
 
-    color: #2196F3;
+    color: var(--accent-color);
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
@@ -49,7 +62,7 @@ ul {
     line-height: 1.14;
     text-decoration: none;
 
-    color: #212121;
+    color: var(--text-color);
 }
 
 .navigation-contacts,
@@ -59,25 +72,27 @@ ul {
     line-height: 1.14;
     text-decoration: none;
 
-    color: #757575;
+    color: var(--sec-text-color);
 }
 
 .nav-link:focus,
 .nav-link:hover {
-    color: #2196F3;
+    color: var(--accent-color);
     transition: color 0.25s;
 }
 
 .contacts:focus,
 .contacts:hover {
-    color: #2196F3;
+    color: var(--accent-color);
     transition: color 0.25s;
 }
 
 /* hero container */
 .hero-title {
     margin-top: 100px;
-    margin-bottom: 0;
+    margin-bottom: 25px;
+    color: #FFFFFF;
+    background-color: var(--dark-background-color);
 
     font-weight: 900;
     font-size: 44px;
@@ -98,7 +113,7 @@ ul {
     text-align: center;
 
     color: #FFFFFF;
-    background: #2196F3;
+    background: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 }
@@ -121,7 +136,7 @@ ul {
     font-size: 14px;
     line-height: 1.71;
 
-    color: #757575;
+    color: var(--sec-text-color);
 }
 
 .names {
@@ -131,7 +146,7 @@ ul {
 
     /* text-align: center; */
 
-    color: #212121;
+    color: var(--text-color);
 }
 
 .profesion {
@@ -141,7 +156,7 @@ ul {
 
     text-align: center;
 
-    color: #757575;
+    color: var(--sec-text-color);
 }
 
 .location {
@@ -155,7 +170,7 @@ ul {
 /* porfolio */
 .buttons {
     display: inline-flex;
-    background: #F5F4FA;
+    background: var(--sec-background-color);
     box-sizing: border-box;
     border-radius: 4px;
     border-style: none;
@@ -165,15 +180,15 @@ ul {
     line-height: 1.6;
     text-align: center;
 
-    color: #212121;
+    color: var(--text-color);
 }
 
 .buttons:focus,
 .buttons:hover {
     color: #FFFFFF;
-    background-color:  #2196F3;
+    background-color:  var(--accent-color);
     transition: color 0.25s, background-color 0.25s;
-    box-shadow: 0 0.5em 0.5em -0.4em #212121;
+    box-shadow: 0 0.5em 0.5em -0.4em var(--text-color);
     transform: translateY(-0.15em);
     cursor: pointer;
 }
@@ -187,7 +202,7 @@ ul {
     font-size: 18px;
     line-height: 2;
 
-    color: #212121;
+    color: var(--text-color);
 }
 
 .project-technology {
@@ -195,12 +210,12 @@ ul {
     font-size: 16px;
     line-height: 1.9;
 
-    color: #757575;
+    color: var(--sec-text-color);
 }
 
 /* footer */
 .footer-container {
-    background-color: #2F303A;
+    background-color: var(--dark-background-color);
 }
 
 .studio-footer {
