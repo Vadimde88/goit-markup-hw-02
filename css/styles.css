@@ -159,13 +159,6 @@ ul {
     color: var(--sec-text-color);
 }
 
-.location {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-
-    color: #FFFFFF;
-}
 
 /* porfolio */
 .buttons {
@@ -216,6 +209,15 @@ ul {
 /* footer */
 .footer-container {
     background-color: var(--dark-background-color);
+}
+
+.location {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+
+    color: #FFFFFF;
 }
 
 .studio-footer {
