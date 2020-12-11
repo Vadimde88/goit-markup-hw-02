@@ -11,10 +11,10 @@
 
 
 body {
-    width: 1230px;
+    /* width: 1230px;
     padding-left: 15px;
     padding-right: 15px;
-    position: absolute;
+    position: absolute; */
     
     letter-spacing: 0.015em;
     font-family: Roboto, sans-serif;
@@ -22,19 +22,26 @@ body {
 
 /*header-container*/
 header {
-    height: 80px;
+    /* height: 80px; */
     background-color: var(--main-background-color);
 }
 
-ul {
+ul, a,
+.current {
     list-style: none;
+    text-decoration: none;
 }
 
-.nav-logo-title {
+.current {
+    color: var(--accent-color);
+}
+
+
+/*navigation-container*/
+.nav-logo-title,
+.logo-title {
     font-family: Raleway, sans-serif;
     text-decoration: none;
-
-    color: var(--text-color);
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
@@ -44,48 +51,44 @@ ul {
     color: var(--accent-color);
 }
 
-.logo-title {
-    font-family: Raleway, sans-serif;
-    text-decoration: none;
+.nav-logo-title {
+    color: var(--text-color);
+}
 
+.logo-title {
     color: var(--accent-color);
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
 }
 
 
 .navigation-links,
-.nav-link {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    text-decoration: none;
-
-    color: var(--text-color);
-}
-
+.nav-link,
 .navigation-contacts,
 .contacts {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     text-decoration: none;
+}
 
+.navigation-links,
+.nav-link{
+    color: var(--text-color);
+}
+
+.navigation-contacts,
+.contacts {
     color: var(--sec-text-color);
 }
 
 .nav-link:focus,
-.nav-link:hover {
-    color: var(--accent-color);
-    transition: color 0.25s;
-}
-
+.nav-link:hover,
 .contacts:focus,
 .contacts:hover {
     color: var(--accent-color);
     transition: color 0.25s;
 }
+
+
 
 /* hero container */
 .hero-title {
@@ -143,7 +146,6 @@ ul {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
-
     /* text-align: center; */
 
     color: var(--text-color);
@@ -160,9 +162,9 @@ ul {
 }
 
 
-/* porfolio */
-.buttons {
-    display: inline-flex;
+/* portfolio */
+.buttons,
+.current-button {
     background: var(--sec-background-color);
     box-sizing: border-box;
     border-radius: 4px;
@@ -177,7 +179,8 @@ ul {
 }
 
 .buttons:focus,
-.buttons:hover {
+.buttons:hover,
+.current-button {
     color: #FFFFFF;
     background-color:  var(--accent-color);
     transition: color 0.25s, background-color 0.25s;
@@ -186,7 +189,9 @@ ul {
     cursor: pointer;
 }
 
+
 .buttons-section {
+    display: inline-flex;
     padding-top: 100px;
 }
 
