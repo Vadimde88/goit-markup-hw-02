@@ -7,15 +7,17 @@
 
     --text-color: #212121;
     --sec-text-color: #757575;
+    --light-text-color: #FFFFFF;
 }
 
 
 body {
     /* width: 1230px;
     padding-left: 15px;
-    padding-right: 15px;
-    position: absolute; */
+    padding-right: 15px; */
     
+    font-weight: 400;
+    font-size: 14px;
     letter-spacing: 0.015em;
     font-family: Roboto, sans-serif;
 }
@@ -92,9 +94,7 @@ ul, a,
 
 /* hero container */
 .hero-title {
-    margin-top: 100px;
-    margin-bottom: 25px;
-    color: #FFFFFF;
+    color: var(--light-text-color);
     background-color: var(--dark-background-color);
 
     font-weight: 900;
@@ -115,7 +115,7 @@ ul, a,
     align-items: center;
     text-align: center;
 
-    color: #FFFFFF;
+    color: var(--light-text-color);
     background: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -129,14 +129,10 @@ ul, a,
 
 .skills {
     font-size: 14px;
-    line-height: 1.14;
     text-transform: uppercase;
 }
 
 .skills-description {
-
-    font-weight: 400;
-    font-size: 14px;
     line-height: 1.71;
 
     color: var(--sec-text-color);
@@ -152,7 +148,6 @@ ul, a,
 }
 
 .profesion {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.19;
 
@@ -166,7 +161,6 @@ ul, a,
 .buttons,
 .current-button {
     background: var(--sec-background-color);
-    box-sizing: border-box;
     border-radius: 4px;
     border-style: none;
 
@@ -181,7 +175,7 @@ ul, a,
 .buttons:focus,
 .buttons:hover,
 .current-button {
-    color: #FFFFFF;
+    color: var(--light-text-color);
     background-color:  var(--accent-color);
     transition: color 0.25s, background-color 0.25s;
     box-shadow: 0 0.5em 0.5em -0.4em var(--text-color);
@@ -189,11 +183,6 @@ ul, a,
     cursor: pointer;
 }
 
-
-.buttons-section {
-    display: inline-flex;
-    padding-top: 100px;
-}
 
 .project-title {
     font-weight: 700;
@@ -204,7 +193,6 @@ ul, a,
 }
 
 .project-technology {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.9;
 
@@ -221,10 +209,9 @@ ul, a,
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
-
-    color: #FFFFFF;
 }
 
+.location,
 .studio-footer {
-    color: #FFFFFF;
+    color: var(--light-text-color);
 }
