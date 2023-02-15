@@ -70,7 +70,6 @@ a,
 .contacts {
 	font-weight: 500;
 	font-size: 16px;
-	line-height: 1.14;
 	text-decoration: none;
 }
 
@@ -107,14 +106,13 @@ a,
 	padding: 10px 32px;
 	font-weight: 700;
 	font-size: 16px;
-	line-height: 1.9;
 	text-decoration: none;
 
 	align-items: center;
 	text-align: center;
 
 	color: var(--light-text-color);
-	background: var(--accent-color-2);
+	background: var(--accent-color);
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	border-radius: 4px;
 }
