@@ -15,6 +15,7 @@ body {
 	font-size: 16px;
 	letter-spacing: 0.02em;
 	font-family: Roboto, sans-serif;
+	color: var(--sec-text-color);
 }
 
 address {
@@ -194,7 +195,7 @@ a,
 .project-title {
 	font-weight: 500;
 	font-size: 20px;
-	line-height: 2;
+	line-height: 24px;
 	letter-spacing: 0.02em;
 
 	color: var(--text-color);
@@ -203,6 +204,7 @@ a,
 .project-technology {
 	font-size: 16px;
 	line-height: 1.9;
+	line-height: 24px;
 
 	color: var(--sec-text-color);
 }
